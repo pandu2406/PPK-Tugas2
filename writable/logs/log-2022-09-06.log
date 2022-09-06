@@ -1,0 +1,9 @@
+CRITICAL - 2022-09-06 07:50:05 --> file_get_contents(): php_network_getaddresses: getaddrinfo for www.republika.co.id failed: No such host is known. 
+in APPPATH\Controllers\Pages.php on line 25.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): php_network_getaddresses: getaddrinfo for www.republika.co.id failed: No such host is known. ', 'APPPATH\\Controllers\\Pages.php', 25)
+ 2 APPPATH\Controllers\Pages.php(25): file_get_contents('https://www.republika.co.id/rss')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Pages->xml_3()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
