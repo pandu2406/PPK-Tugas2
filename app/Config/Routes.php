@@ -35,11 +35,11 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-$routes->get('/xml-1', 'Pages::xml_1');
-$routes->get('/xml-2', 'Pages::xml_2');
-$routes->get('/xml-3', 'Pages::xml_3');
-$routes->get('/json', 'Pages::json_portal');
+$routes->get('Views/welcome_message', 'Home::index');
+$routes->get('Views/xml-1', 'Pages::xml_1');
+$routes->get('Views/xml-2', 'Pages::xml_2');
+$routes->get('Views/xml-3', 'Pages::xml_3');
+$routes->get('Views/json', 'Pages::json_portal');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
